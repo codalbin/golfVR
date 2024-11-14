@@ -41,7 +41,7 @@ public class collision : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.name == "golf_club")
         {
             // Calculer la force de la collision
             Vector3 collisionForce = collision.impulse / Time.fixedDeltaTime;
